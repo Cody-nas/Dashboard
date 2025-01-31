@@ -1,16 +1,15 @@
-
-import './App.css'
+import { ThemeProvider } from "./contents/Theme-content";
 
 function App() {
 
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-red-500 underline">
-        Hello world!
-      </h1>
+      <ThemeProvider storageKey="theme">
+        <h1>Hello World</h1>
+      </ThemeProvider>
     </>
   )
 }
 
-export default App
+export default App;
