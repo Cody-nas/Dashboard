@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { ThemeProvider } from "@/contexts/theme-context";
+import { ThemeProvider } from "./contexts/theme-context";
 
-import Layout from "@/routes/layout";
-import DashboardPage from "@/routes/dashboard/page";
+import Layout from "./routes/layout";
+import DashboardPage from "./routes/dashboard/page";
 
 function App() {
     const router = createBrowserRouter([
